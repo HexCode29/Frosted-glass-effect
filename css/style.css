@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#bg{
+  width: 100%;
+  position: fixed;
+}
+body{
+  background: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?dpr=1&auto=format&fit=crop&w=1080&h=717&q=80&cs=tinysrgb&crop=') fixed no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width : 100%;
+}
+#container{
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  background: inherit;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -175px;
+}
+#container:before{
+  content: "";
+  width: 350px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.2);
+  filter: blur(10px);
+}
+form{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+form img{
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+input{
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+  font-size: 18px;
+  outline: none;
+  background-color: transparent;
+}
+input[type$="it"]{
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(0, 220, 11, 0.69);
+  color: white;
+  padding-bottom: 0;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  border-bottom: none;
+}
+input[type$="it"]:hover{
+  background: #6C7A89;
+}
+input[type="text"]{
+  font-weight: bold;
+  color: #666;
+}
+span a{
+ color: #999; 
+}
+
+
+
+
+
+
+
+
+
+
